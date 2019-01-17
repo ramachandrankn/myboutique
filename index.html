@@ -340,6 +340,8 @@
 <textarea name="MultiLine" maxlength="65535"></textarea>
 <button type="submit"><em>Submit</em></button></form><script type="text/javascript">var isSalesIQIntegrationEnabled = false;
 function zf_validateandsubmitdata(){
+    window.pagesense = window.pagesense || [];
+window.pagesense.push(['trackEvent', 'testevent']);
 if(isSalesIQIntegrationEnabled){
 var visitorinfo = {};
 var elements = document.getElementById("form").elements;
