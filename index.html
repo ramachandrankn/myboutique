@@ -317,83 +317,93 @@
         </div> -->
         
         <!-- Change or deletion of the name attributes in the input tag will lead to empty values on record submission-->
-<form action='https://forms.zohopublic.com/zohocorporation/form/ContactForm116/formperma/ihkZ240yp0gRSI4wuEjfu6aN4EGSpS1qTQ1YZhRa6y4/htmlRecords/submit' name='form' id='form' method='POST' accept-charset='UTF-8' enctype='multipart/form-data' onSubmit="zf_validateandsubmitdata();"><input type="hidden" name="zf_referrer_name" value=""><!-- To Track referrals , place the referrer name within the " " in the above hidden input field -->
-<input type="hidden" name="zf_redirect_url" value=""><!-- To redirect to a specific page after record submission , place the respective url within the " " in the above hidden input field -->
-<input type="hidden" name="zc_gad" value=""><!-- If GCLID is enabled in Zoho CRM Integration, click details of AdWords Ads will be pushed to Zoho CRM -->
-<h2>Contact Us</h2>
-<p></p>
-<!--Name-->
-<label>Full name
-<em>*</em>
-</label>
-<input type="text" maxlength="255" name="Name_First" invlovedinsalesiq=false  fieldType=7 /><label>First</label>
-<input type="text" maxlength="255" name="Name_Last" invlovedinsalesiq=false  fieldType=7 /><label>Last</label>
-<!--Email-->
-<label>Email 
-<em>*</em>
-</label>
-<input type="text" maxlength="255" name="Email" value="" invlovedinsalesiq=false  fieldType=9 />
-<!--Multi Line-->
-<label>Leave us a few words 
-<em>*</em>
-</label>
-<textarea name="MultiLine" maxlength="65535"></textarea>
-<button type="submit"><em>Submit</em></button></form><script type="text/javascript">var isSalesIQIntegrationEnabled = false;
-function zf_validateandsubmitdata(){
-    window.pagesense = window.pagesense || [];
-window.pagesense.push(['trackEvent', 'testevent']);
-if(isSalesIQIntegrationEnabled){
-var visitorinfo = {};
-var elements = document.getElementById("form").elements;
-for (var idx = 0; idx<elements.length;idx++) {
-var inpElem = elements[idx];
-var name = inpElem.getAttribute("name");
-var fieldType = inpElem.getAttribute("fieldType");
-if(fieldType==="1" || fieldType==="7" || fieldType==="9" || fieldType==="11"){
-var invlovedinsalesiq = inpElem.getAttribute("invlovedinsalesiq");
-if(fieldType==="1"){
-var nameFieldInvolved = inpElem.getAttribute("nameFieldInvolved");
-var phoneFieldInvolved = inpElem.getAttribute("phoneFieldInvolved");
-if(invlovedinsalesiq==="true"){
-if(phoneFieldInvolved){
-var salesIQValue=inpElem.value;
-visitorinfo.contactnumber = salesIQValue;
-}if(nameFieldInvolved){
-var salesIQValue=inpElem.value;
-visitorinfo.name = salesIQValue;
-}
-}
-}if(fieldType==="7"){
-if(invlovedinsalesiq==="true"){
-var salesIQValue=inpElem.value;
-visitorinfo.name = salesIQValue;
-}
-}if(fieldType==="9"){
-if(invlovedinsalesiq==="true"){
-var salesIQValue=inpElem.value;
-visitorinfo.email = salesIQValue;
-}
-}if(fieldType==="11"){
-if(invlovedinsalesiq==="true"){
-var compName = inpElem.getAttribute("compname");
-var phoneFormat = inpElem.getAttribute("phoneFormat");
-var salesIQValue="";
-if(phoneFormat==="1"){
-salesIQValue = document.getElementById("international_"+compName+"_countrycode").value; 
-}else{
-var countryCode = document.getElementById(compName+"_countrycode").value;
-var first = document.getElementById(compName+"_first").value;
-var last = document.getElementById(compName+"_second").value;
-salesIQValue =countryCode+first+last;
-}
-visitorinfo.contactnumber = salesIQValue;
-}
-}
-}
-}
-parent.postMessage(JSON.stringify({ type: 'zoho.salesiq.apimessage', visitor: visitorinfo } ), '*');// No I18N
-}
-}</script>
+<!-- Note :
+   - You can modify the font style and form style to suit your website. 
+   - Code lines with comments ���Do not remove this code���  are required for the form to work properly, make sure that you do not remove these lines of code. 
+   - The Mandatory check script can modified as to suit your business needs. 
+   - It is important that you test the modified form before going live.-->
+<div id='crmWebToEntityForm' style='width:600px;margin:auto;'>
+   <META HTTP-EQUIV ='content-type' CONTENT='text/html;charset=UTF-8'>
+   <form action='https://crm.zoho.com/crm/WebToLeadForm' name=WebToLeads2816915000000262010 method='POST' onSubmit='javascript:document.charset="UTF-8"; return checkMandatory2816915000000262010()' accept-charset='UTF-8'>
+
+	 <!-- Do not remove this code. -->
+	<input type='text' style='display:none;' name='xnQsjsdp' value='d2ed3f59e96ca3fa792e6087645de38dbff593f75d7e0705a79bed2665dc74da'/>
+	<input type='hidden' name='zc_gad' id='zc_gad' value=''/>
+	<input type='text' style='display:none;' name='xmIwtLD' value='24057436ec26a94c208dcc5d29d7f4a3b7f1792746614b607a4735374966b1ec'/>
+	<input type='text' style='display:none;'  name='actionType' value='TGVhZHM='/>
+
+	<input type='text' style='display:none;' name='returnURL' value='https&#x3a;&#x2f;&#x2f;ramachandrankn.github.io&#x2f;myboutique&#x2f;' /> 
+	 <!-- Do not remove this code. -->
+	<style>
+		tr , td { 
+			padding:6px;
+			border-spacing:0px;
+			border-width:0px;
+			}
+	</style>
+	<table style='width:600px;background-color:white;color:black'>
+
+	<tr><td colspan='2' style='text-align:left;color:black;font-family:Arial;font-size:14px;'><strong>test</strong></td></tr>
+
+	<tr><td  style='nowrap:nowrap;text-align:left;font-size:12px;font-family:Arial;width:200px;'>Email</td><td style='width:250px;' ><input type='text' style='width:250px;'  maxlength='100' name='Email' /></td></tr>
+
+	<tr><td  style='nowrap:nowrap;text-align:left;font-size:12px;font-family:Arial;width:200px;'>First Name</td><td style='width:250px;' ><input type='text' style='width:250px;'  maxlength='40' name='First Name' /></td></tr>
+
+	<tr><td  style='nowrap:nowrap;text-align:left;font-size:12px;font-family:Arial;width:200px;'>Last Name<span style='color:red;'>*</span></td><td style='width:250px;' ><input type='text' style='width:250px;'  maxlength='80' name='Last Name' /></td></tr>
+
+	<tr><td  style='nowrap:nowrap;text-align:left;font-size:12px;font-family:Arial;width:200px;'>Company<span style='color:red;'>*</span></td><td style='width:250px;' ><input type='text' style='width:250px;'  maxlength='100' name='Company' /></td></tr>
+
+	<tr><td colspan='2' style='text-align:center; padding-top:15px;font-size:12px;'>
+		<input style='font-size:12px;color:black'  type='submit' value='Submit' />
+		<input  type='reset' style='font-size:12px;color:black' value='Reset' />
+	    </td>
+	</tr>
+   </table>
+	<script>
+ 	  var mndFileds=new Array('Company','Last Name');
+ 	  var fldLangVal=new Array('Company','Last Name');
+		var name='';
+		var email='';
+
+ 	  function checkMandatory2816915000000262010() {
+		for(i=0;i<mndFileds.length;i++) {
+		  var fieldObj=document.forms['WebToLeads2816915000000262010'][mndFileds[i]];
+		  if(fieldObj) {
+			if (((fieldObj.value).replace(/^\s+|\s+$/g, '')).length==0) {
+			 if(fieldObj.type =='file')
+				{ 
+				 alert('Please select a file to upload.'); 
+				 fieldObj.focus(); 
+				 return false;
+				} 
+			alert(fldLangVal[i] +' cannot be empty.'); 
+   	   	  	  fieldObj.focus();
+   	   	  	  return false;
+			}  else if(fieldObj.nodeName=='SELECT') {
+  	   	   	 if(fieldObj.options[fieldObj.selectedIndex].value=='-None-') {
+				alert(fldLangVal[i] +' cannot be none.'); 
+				fieldObj.focus();
+				return false;
+			   }
+			} else if(fieldObj.type =='checkbox'){
+ 	 	 	 if(fieldObj.checked == false){
+				alert('Please accept  '+fldLangVal[i]);
+				fieldObj.focus();
+				return false;
+			   } 
+			 } 
+			 try {
+			     if(fieldObj.name == 'Last Name') {
+				name = fieldObj.value;
+ 	 	 	    }
+			} catch (e) {}
+		    }
+		}
+	     }
+	   
+</script>
+	</form>
+</div>
             </div>
     </section>
 
