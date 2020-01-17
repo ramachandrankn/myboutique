@@ -408,35 +408,30 @@ padding:0px !important;
 										</table>
 									</div>
 								</div>
-								<form method="POST" id="zcampaignOptinForm" style="margin:0px;" action="https://publ.maillist-manage.com/weboptin.zc" target="_zcSignup">
-									<div style="display:none;background-color:#FFEBE8;padding:10px 10px; color:#d20000; font-size:11px; margin:10px;border:solid 1px #ffd9d3; margin-top:20px;" id="errorMsgDiv">&nbsp;&nbsp;Please correct the marked field(s) below.</div><!-- check to mark emailid field as type email, and other mandatory fields as type required -->
-									<div style="padding-left:15px; padding-right:15px;padding-bottom:15px; padding-top:15px;">
-										<input name="CONTACT_EMAIL" changetype="CONTACT_EMAIL" changeitem="SIGNUP_FORM_FIELD" type="email" required="true" id="CONTACT_EMAIL" style="border-top: none; border-right: none; border-bottom: 2px solid rgb(221, 150, 210); border-left: none; width: 100%; color: rgb(255, 255, 255); padding: 4px; text-align: left; border-image: initial; box-sizing: border-box; text-indent: 5px; outline: 0px; font-family: Arial; border-radius: 0px; background: transparent; font-size: 17px; height: 43px;" placeholder="Email">
-										<span style="display:none" id="dt_CONTACT_EMAIL">1,true,6,Lead Email,2</span>
-									</div><!-- check to mark emailid field as type email, and other mandatory fields as type required --><!-- check to mark emailid field as type email, and other mandatory fields as type required -->
-									<div style="padding-left:15px; padding-right:15px;padding-bottom:15px; padding-top:15px;">
-										<input name="LASTNAME" changetype="LASTNAME" changeitem="SIGNUP_FORM_FIELD" type="text" id="LASTNAME" style="border-top: none; border-right: none; border-bottom: 2px solid rgb(221, 150, 210); border-left: none; width: 100%; color: rgb(255, 255, 255); padding: 4px; text-align: left; border-image: initial; box-sizing: border-box; text-indent: 5px; outline: 0px; font-family: Arial; border-radius: 0px; background: transparent; font-size: 17px; height: 43px;" placeholder="Name">
-										<span style="display:none" id="dt_LASTNAME">1,false,1,Last Name,2</span>
-									</div>
-									<div style="padding-left:15px; padding-right:15px;padding-bottom:15px;padding-top:5px;">
-										<button name="SIGNUP_SUBMIT_BUTTON" id="zcWebOptin" style="background-color: rgb(255, 255, 255); color: rgb(0, 0, 0); cursor: pointer; border: none; padding: 6px 10px; outline: 0px; font-family: Arial; border-radius: 5px; width: 100%; font-size: 20px; height: 43px; text-align: center;">Join now</button>
-									</div><!-- Do not edit the below Zoho Campaigns hidden tags -->
-									<input type="hidden" id="fieldBorder" value="rgb(255, 255, 255) rgb(255, 255, 255) rgb(221, 150, 210)">
-									<input type="hidden" id="submitType" name="submitType" value="optinCustomView">
-									<input type="hidden" id="lD" name="lD" value="17c4906100c6d435">
-									<input type="hidden" name="emailReportId" id="emailReportId" value="">
-									<input type="hidden" id="formType" name="formType" value="QuickForm">
-									<input type="hidden" name="zx" id="cmpZuid" value="12d3c0b">
-									<input type="hidden" name="zcvers" value="3.0">
-									<input type="hidden" name="oldListIds" id="allCheckedListIds" value="">
-									<input type="hidden" id="mode" name="mode" value="OptinCreateView">
-									<input type="hidden" id="zcld" name="zcld" value="17c4906100c6d435">
-									<input type="hidden" id="document_domain" value="zoho.com">
-									<input type="hidden" id="zc_Url" value="publ.maillist-manage.com">
-									<input type="hidden" id="new_optin_response_in" value="2">
-									<input type="hidden" id="duplicate_optin_response_in" value="2">
-									<input type="hidden" name="zc_trackCode" id="zc_trackCode" value="ZCFORMVIEW" onload="">
-									<input type="hidden" id="zc_formIx" name="zc_formIx" value="488af5056bd9fc5b029aa1599412914a0c77844c3cf20d05"><!-- End of the campaigns hidden tags --></form>
+								<!-- Change or deletion of the name attributes in the input tag will lead to empty values on record submission-->
+<form action='https://forms.zohopublic.com/zohocorporation/form/ContactForm116/formperma/ihkZ240yp0gRSI4wuEjfu6aN4EGSpS1qTQ1YZhRa6y4/htmlRecords/submit' name='form' id='form' method='POST' accept-charset='UTF-8' enctype='multipart/form-data'>
+<input type="hidden" name="zf_referrer_name" value=""><!-- To Track referrals , place the referrer name within the " " in the above hidden input field -->
+<input type="hidden" name="zf_redirect_url" value=""><!-- To redirect to a specific page after record submission , place the respective url within the " " in the above hidden input field -->
+<input type="hidden" name="zc_gad" value=""><!-- If GCLID is enabled in Zoho CRM Integration, click details of AdWords Ads will be pushed to Zoho CRM -->
+<h2>Contact Us</h2>
+<p></p>
+<!--Name-->
+<label>Full name
+<em>*</em>
+</label>
+<input type="text" maxlength="255" name="Name_First" fieldType=7 /><label>First</label>
+<input type="text" maxlength="255" name="Name_Last" fieldType=7 /><label>Last</label>
+<!--Email-->
+<label>Email 
+<em>*</em>
+</label>
+<input type="text" maxlength="255" name="Email" value="" fieldType=9 />
+<!--Multi Line-->
+<label>Leave us a few words 
+<em>*</em>
+</label>
+<textarea name="MultiLine" maxlength="65535"></textarea>
+<button type="submit"><em>Submit</em></button></form>
 							</div>
 						</td>
 					</tr>
