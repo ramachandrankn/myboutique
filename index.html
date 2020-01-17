@@ -406,8 +406,18 @@ padding:0px !important;
 <em>*</em>
 </label>
 <textarea name="MultiLine" maxlength="65535"></textarea>
-<button type="submit"><em>Submit</em></button></form>
+<button type="submit" onclick="sendCustomEvent()" ><em>Submit</em></button></form>
 </div>
+		
+		<script>
+
+    function sendCustomEvent() {
+        window.pagesense = window.pagesense || [];
+        window.pagesense.push(['trackEvent', 'myproject_customevent']);
+        document.getElementById("form").submit();
+    }
+
+</script>
 
 <!--Zoho MarketingHub Web-Optin Form Ends Here-->
         
